@@ -3,9 +3,27 @@
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script type="text/javascript" charset="utf-8"
+      src="javascripts/socket.io.js"></script>
+    <script type="text/javascript" charset="utf-8"
+      src="javascripts/jquery-1.11.3.min.js"></script>
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <div class="container">
+      <div class="header">
+        <h1><%= title %></h1>
+      </div>
+      <div class="content">
+        <canvas id="canvas" class="canvas">
+          Sorry, Your Web Browser does not support Canvas Element
+        </canvas>
+      </div>
+      <div class="footer">
+        Made by Joseph Yu
+      </div>
+    </div>
   </body>
+
+  <script type="text/javascript" charset="utf-8"
+    src="javascripts/index.js"></script>
 </html>

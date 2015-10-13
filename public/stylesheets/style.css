@@ -1,8 +1,46 @@
+html {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  padding: 0px;
+  margin: 0px;
+}
+
 body {
-  padding: 50px;
+  padding: 0px;
+  margin: 0px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+.container {
+  width: 80%;
+  margin: auto;
 }
+
+.header {
+  width: 100%;
+  padding: 10px;
+  background: #58ACFA;
+  color: #FFF;
+}
+
+.content {
+  width: 100%;
+  background: #A9D0F5;
+  color: #FFF;
+  padding: 10px;
+}
+
+.canvas {
+  -moz-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  display: inline;
+}
+
+
+.footer {
+  width: 100%;
+  background: #58ACFA;
+  color: #FFF;
+  padding: 10px;
+}
+
