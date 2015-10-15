@@ -30,7 +30,14 @@ body {
   padding: 10px;
 }
 
-.canvas {
+/*.canvas {*/
+  /*-moz-transform: translate3d(0, 0, 0);*/
+  /*-webkit-transform: translate3d(0, 0, 0);*/
+  /*display: inline;*/
+  /*margin: 0px;*/
+/*}*/
+
+.video {
   -moz-transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
   display: inline;

@@ -10,7 +10,8 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 
 var app = express();
-var webcam = child_process.spawn('./webcam');
+var ffserver = child_process.spawn('./start_server.sh');
+//var webcam = child_process.spawn('./webcam');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -60,7 +61,8 @@ app.use(function(err, req, res, next) {
 
 process.on('SIGINT', function() {
   console.log("process interrupted");
-  webcam.kill();
+  ffserver.kill();
+  //webcam.kill();
   process.kill();
 });
 
